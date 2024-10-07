@@ -1,6 +1,5 @@
 name: testci
 
-runs-on: ubuntu-latest
 
 on: [push, pull_request]
 
