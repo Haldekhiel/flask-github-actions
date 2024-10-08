@@ -25,4 +25,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: haldekhiel/flaskgithub-actions-app:latest
+          tags: |
+            haldekhiel/flaskgithub-actions-app:latest
+            haldekhiel/flaskgithub-actions-app:${{ github.sha }}
