@@ -28,5 +28,4 @@ jobs:
           tags: |
             haldekhiel/flaskgithub-actions-app:latest
             haldekhiel/flaskgithub-actions-app:${{ github.sha }}
-        cached-from: 
-          - haldekhiel/flaskgithub-actions-app:latest
+            
