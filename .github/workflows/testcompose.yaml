@@ -18,4 +18,4 @@ jobs:
          docker compose up -d --build
       - name: Test with pytest
         run: |
-          pytest
+          docker exec app pytest
