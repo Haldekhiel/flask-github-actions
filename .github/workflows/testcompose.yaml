@@ -16,6 +16,7 @@ jobs:
       - name: run dockercompose
         run: |
          docker compose up -d --build
+      - run: docker ps -a
       - name: Test with pytest
         run: |
-          docker exec app pytest
+          docker exec flask-github-actions-app pytest
