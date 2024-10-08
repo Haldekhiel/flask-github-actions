@@ -1,7 +1,7 @@
 name: push image
 
-on:
-  push:
+on: 
+  pull_reques:
     branches:
       - main
 
@@ -28,4 +28,4 @@ jobs:
           tags: |
             haldekhiel/flaskgithub-actions-app:latest
             haldekhiel/flaskgithub-actions-app:${{ github.sha }}
-            
+

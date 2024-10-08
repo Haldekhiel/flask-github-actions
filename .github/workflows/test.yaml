@@ -1,7 +1,10 @@
 name: testci
 
 
-on: [push, pull_request]
+on: 
+  pull_reques:
+    branches:
+      - main
 
 
 jobs:
