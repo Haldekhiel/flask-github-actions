@@ -1,0 +1,21 @@
+name: testci
+
+
+on: 
+  push:
+    branches:
+      - main
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: run dockercompose
+        run: |
+         docker compose up -d
+      - name: Test with pytest
+        run: |
+          pytest
