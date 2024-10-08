@@ -25,5 +25,6 @@ jobs:
           context: .
           push: true
           tags: |
-           faialotaibi/github-actions-app:latest
-           faialotaibi/github-actions-app: ${{ github.sha }}
+           haldekhiel/github-actions-app:latest
+           haldekhiel/github-actions-app: ${{ github.sha }}
+
