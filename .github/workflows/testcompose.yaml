@@ -19,4 +19,4 @@ jobs:
       - run: docker ps -a
       - name: Test with pytest
         run: |
-          docker exec flask-github-actions-app pytest
+          docker exec flask-github-actions-app-1 pytest
